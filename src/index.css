@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 222 47% 11%;
+    --primary: 224 58% 33%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215 16% 47%;
@@ -30,7 +32,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 43 96% 56%;
+    --ring: 224 58% 33%;
 
     --radius: 0.5rem;
 
@@ -91,5 +93,6 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
