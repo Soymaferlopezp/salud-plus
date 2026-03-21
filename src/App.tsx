@@ -8,6 +8,9 @@ import NotFound from "./pages/NotFound.tsx";
 import AccountTypePage from "./pages/AccountTypePage.tsx";
 import RegisterPatientPage from "./pages/RegisterPatientPage.tsx";
 import RegisterDependentPage from "./pages/RegisterDependentPage.tsx";
+import PatientDashboard from "./pages/PatientDashboard.tsx";
+import DoctorDashboard from "./pages/DoctorDashboard.tsx";
+import AdminDashboard from "./pages/AdminDashboard.tsx";
 
 const queryClient = new QueryClient();
 
