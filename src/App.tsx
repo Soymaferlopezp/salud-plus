@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import AccountTypePage from "./pages/AccountTypePage.tsx";
+import RegisterPatientPage from "./pages/RegisterPatientPage.tsx";
+import RegisterDependentPage from "./pages/RegisterDependentPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +19,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/crear-cuenta" element={<AccountTypePage />} />
+          <Route path="/registro/paciente" element={<RegisterPatientPage />} />
+          <Route path="/registro/dependiente" element={<RegisterDependentPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
