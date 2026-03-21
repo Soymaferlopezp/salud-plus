@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const [cedula, setCedula] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
