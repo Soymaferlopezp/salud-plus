@@ -8,6 +8,9 @@ import NotFound from "./pages/NotFound.tsx";
 import AccountTypePage from "./pages/AccountTypePage.tsx";
 import RegisterPatientPage from "./pages/RegisterPatientPage.tsx";
 import RegisterDependentPage from "./pages/RegisterDependentPage.tsx";
+import PatientDashboard from "./pages/PatientDashboard.tsx";
+import DoctorDashboard from "./pages/DoctorDashboard.tsx";
+import AdminDashboard from "./pages/AdminDashboard.tsx";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +24,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/crear-cuenta" element={<AccountTypePage />} />
           <Route path="/registro/paciente" element={<RegisterPatientPage />} />
-          <Route path="/registro/dependiente" element={<RegisterDependentPage />} />
+          <Route path="/dashboard/paciente" element={<PatientDashboard />} />
+          <Route path="/dashboard/doctor" element={<DoctorDashboard />} />
+          <Route path="/dashboard/admin" element={<AdminDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
