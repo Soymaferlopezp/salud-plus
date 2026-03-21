@@ -48,9 +48,10 @@ const doctorMenu = [
 
 const adminMenu = [
   { title: "Inicio", url: "/dashboard/admin", icon: Home },
-  { title: "Citas del día", url: "/dashboard/admin/citas", icon: Calendar },
+  { title: "Pacientes", url: "/dashboard/admin/pacientes", icon: Users },
+  { title: "Citas", url: "/dashboard/admin/citas", icon: Calendar },
+  { title: "Médicos", url: "/dashboard/admin/medicos", icon: Stethoscope },
   { title: "Registro rápido", url: "/dashboard/admin/registro", icon: UserPlus },
-  { title: "Buscar paciente", url: "/dashboard/admin/buscar", icon: Search },
   { title: "Actividad", url: "/dashboard/admin/actividad", icon: Activity },
 ];
 

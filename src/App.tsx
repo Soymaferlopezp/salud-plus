@@ -11,6 +11,9 @@ import RegisterDependentPage from "./pages/RegisterDependentPage.tsx";
 import PatientDashboard from "./pages/PatientDashboard.tsx";
 import DoctorDashboard from "./pages/DoctorDashboard.tsx";
 import AdminDashboard from "./pages/AdminDashboard.tsx";
+import PatientsListPage from "./pages/admin/PatientsListPage.tsx";
+import AppointmentsListPage from "./pages/admin/AppointmentsListPage.tsx";
+import DoctorsListPage from "./pages/admin/DoctorsListPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/dashboard/paciente" element={<PatientDashboard />} />
           <Route path="/dashboard/doctor" element={<DoctorDashboard />} />
           <Route path="/dashboard/admin" element={<AdminDashboard />} />
+          <Route path="/dashboard/admin/pacientes" element={<PatientsListPage />} />
+          <Route path="/dashboard/admin/citas" element={<AppointmentsListPage />} />
+          <Route path="/dashboard/admin/medicos" element={<DoctorsListPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
