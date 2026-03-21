@@ -19,6 +19,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/crear-cuenta" element={<AccountTypePage />} />
+          <Route path="/registro/paciente" element={<RegisterPatientPage />} />
+          <Route path="/registro/dependiente" element={<RegisterDependentPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
