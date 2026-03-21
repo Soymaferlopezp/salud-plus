@@ -115,19 +115,19 @@ const LoginForm = () => {
 
         {/* Secondary actions */}
         <div className="space-y-3">
-          <a
-            href="#"
+          <button
+            onClick={() => navigate("/crear-cuenta")}
             className="flex items-center justify-center gap-2 w-full h-11 rounded-lg border border-input text-sm font-medium text-foreground hover:bg-muted/60 active:scale-[0.98] transition-all duration-150"
           >
             <UserPlus className="h-4 w-4" />
             Crear cuenta
-          </a>
-          <a
-            href="#"
-            className="block text-center text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
+          </button>
+          <button
+            onClick={() => navigate("/registro/dependiente")}
+            className="block w-full text-center text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
           >
             Registrar dependiente
-          </a>
+          </button>
         </div>
       </div>
 
